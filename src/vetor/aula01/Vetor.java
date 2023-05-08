@@ -39,6 +39,7 @@ public class Vetor {
 //        return false;
 //    }
 	public boolean adiciona(String elemento){
+        this.aumentaCapacidade();
 		if (this.tamanho < this.elementos.length){
 			this.elementos[this.tamanho] = elemento;
 			this.tamanho++;
