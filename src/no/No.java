@@ -1,28 +1,26 @@
 package no;
 
-public class No {
-    private String elemento;
-    private No proximoNo;
+public class No<T> {
+    private T elemento;
+    private No<T> proximoNo;
 
-    public No(String elemento){
+    public No(T elemento){
         this.proximoNo = null;
         this.elemento  = elemento;
     }
-
-
-    public String getElemento() {
+    public T getElemento() {
         return elemento;
     }
 
-    public void setElemento(String elemento) {
+    public void setElemento(T elemento) {
         this.elemento = elemento;
     }
 
-    public No getProximoNo() {
+    public No<T> getProximoNo() {
         return proximoNo;
     }
 
-    public void setProximoNo(No proximoNo) {
+    public void setProximoNo(No<T> proximoNo) {
         this.proximoNo = proximoNo;
     }
 
